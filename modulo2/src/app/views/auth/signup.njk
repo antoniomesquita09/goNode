@@ -22,8 +22,7 @@
   <script type="text/javascript">
     var avatarInput = document.getElementById('avatar')
     var img = document.querySelector('label[for=avatar] img')
-    
-    avatarInput.onChange = function(e){
+    avatarInput.onchange = function(e){
       img.classList.add('preview')
       img.src = URL.createObjectURL(e.target.files[0])
     }
