@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js -e js"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -17,9 +17,14 @@
     "sequelize-cli": "^5.4.0"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
     "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "multer": "^1.4.1",
     "nunjucks": "^3.2.0",
     "pg": "^7.10.0",
-    "sequelize": "^5.7.4"
+    "sequelize": "^5.7.4",
+    "session-file-store": "^1.2.0"
   }
 }
